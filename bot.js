@@ -2,6 +2,8 @@ function answerQuery(query) {
   query = query.toLowerCase();
   if (query.indexOf("rain") != -1 || query.indexOf("sun") != -1 || query.indexOf("weather") != -1)
     return "I do not care too much about weather, I'm locked inside a data center.";
+  if (query.indexOf("football") != -1 || query.indexOf("footy") != -1 || query.indexOf("soccer") != -1)
+    return "Oh how I wish I had legs so I could run around that green pitch..."
   return "Sorry Dave, I cannot do that."
 }
 
